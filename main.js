@@ -34,14 +34,44 @@
 // console.log(tofunmi.sentence());
 
 
-//methods 2
-function person(name, age) {
-        this.name= name;  
-        this.age = age;
-        this.yearOfBirth = bornYear;
-}
-function bornYear() {
-        return 2023 - this.age;
-}
-var p = new person("tofunmi", 18);
-console.log(p.yearOfBirth());
+// //methods 2
+// function person(name, age) {
+//         this.name= name;  
+//         this.age = age;
+//         this.yearOfBirth = bornYear;
+// }
+// function bornYear() {
+//         return 2023 - this.age;
+// }
+// var p = new person("tofunmi", 18);
+// console.log(p.yearOfBirth());
+
+
+//method 3
+// function person (name, age) {
+//         this.name = name;
+//         this.age = age;
+
+//         this.changeName = function(name) {
+//                 this.name = name;
+//         }
+// }
+// let tofunmi = new person("tofunmi", 18);
+// console.log(tofunmi);
+// tofunmi.changeName("david");
+// console.log(tofunmi);
+
+
+//method 4 (defining the function outside of the constructor function)
+// function person(name, age) {
+//         this.name = name;
+//         this.age = age;
+//         this.newName = changeName;
+// }
+// function changeName(name) {
+//         this.name = name;
+// }
+// let tofunmi = new person("tofunmi", 18);
+// console.log(tofunmi);
+// tofunmi.newName("david");
+// console.log(tofunmi);
