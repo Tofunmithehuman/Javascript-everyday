@@ -7,6 +7,7 @@
 // console.log(person.name.length)
 
 
+
 // //object method
 // function person(name, age, color) {
 //         this.name = name;
@@ -18,6 +19,7 @@
 // console.log(Bolaji);
 // let Uzoma = new person("david", 19, "black")
 // console.log(Uzoma);
+
 
 
 // // methods 
@@ -34,6 +36,7 @@
 // console.log(tofunmi.sentence());
 
 
+
 // //methods 2
 // function person(name, age) {
 //         this.name= name;  
@@ -45,6 +48,7 @@
 // }
 // var p = new person("tofunmi", 18);
 // console.log(p.yearOfBirth());
+
 
 
 // //method 3
@@ -62,6 +66,7 @@
 // console.log(tofunmi);
 
 
+
 // //method 4 (defining the function outside of the constructor function)
 // function person(name, age) {
 //         this.name = name;
@@ -76,6 +81,8 @@
 // tofunmi.newName("david");
 // console.log(tofunmi);
 
+
+
 // //method 5
 // function person(name, age) {
 //         this.name = name;
@@ -89,3 +96,15 @@
 // let tofunmi = new person("tofunmi", 18);
 // console.log(tofunmi);
 // console.log(tofunmi.yearOfBirth());
+
+
+
+//code challenge 1
+let person = {
+        name: "Oluwatofunmi",
+        age: 18,
+        city: "Lagos"
+}
+console.log(person);
+//Done
+
