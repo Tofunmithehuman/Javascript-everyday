@@ -99,12 +99,39 @@
 
 
 
-//code challenge 1
-let person = {
-        name: "Oluwatofunmi",
-        age: 18,
-        city: "Lagos"
+// //code challenge 1
+// let person = {
+//         name: "Oluwatofunmi",
+//         age: 18,
+//         city: "Lagos"
+// }
+// console.log(person);
+// //Done
+
+
+//code challenge 2
+function calculator(x, y) {
+        this.x = x;
+        this.y = y;
+        this.add = function() {
+                return this.x + this.y;
+        }
+        this.subtract = function() {
+                return this.x - this.y;
+        }
+        this.multiply = function() {
+                return this.x * this.y;
+        }
+        this.divide = function() {
+                return this.x / this.y;
+        }
 }
-console.log(person);
+
+let calc = new calculator(2, 2);
+
+console.log(calc.add());
+console.log(calc.subtract());
+console.log(calc.multiply());
+console.log(calc.divide());
 //Done
 
