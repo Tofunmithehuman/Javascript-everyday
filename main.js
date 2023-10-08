@@ -47,7 +47,7 @@
 // console.log(p.yearOfBirth());
 
 
-//method 3
+// //method 3
 // function person (name, age) {
 //         this.name = name;
 //         this.age = age;
@@ -62,7 +62,7 @@
 // console.log(tofunmi);
 
 
-//method 4 (defining the function outside of the constructor function)
+// //method 4 (defining the function outside of the constructor function)
 // function person(name, age) {
 //         this.name = name;
 //         this.age = age;
@@ -75,3 +75,17 @@
 // console.log(tofunmi);
 // tofunmi.newName("david");
 // console.log(tofunmi);
+
+// //method 5
+// function person(name, age) {
+//         this.name = name;
+//         this.age = age;
+//         this.yearOfBirth = myYear; 
+// }
+// function myYear() {
+//         return 2023 - this.age;
+// }
+
+// let tofunmi = new person("tofunmi", 18);
+// console.log(tofunmi);
+// console.log(tofunmi.yearOfBirth());
