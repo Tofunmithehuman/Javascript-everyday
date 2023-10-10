@@ -109,29 +109,52 @@
 // //Done
 
 
-//code challenge 2
-function calculator(x, y) {
-        this.x = x;
-        this.y = y;
-        this.add = function() {
-                return this.x + this.y;
-        }
-        this.subtract = function() {
-                return this.x - this.y;
-        }
-        this.multiply = function() {
-                return this.x * this.y;
-        }
-        this.divide = function() {
-                return this.x / this.y;
+// //code challenge 2
+// function calculator(x, y) {
+//         this.x = x;
+//         this.y = y;
+//         this.add = function() {
+//                 return this.x + this.y;
+//         }
+//         this.subtract = function() {
+//                 return this.x - this.y;
+//         }
+//         this.multiply = function() {
+//                 return this.x * this.y;
+//         }
+//         this.divide = function() {
+//                 return this.x / this.y;
+//         }
+// }
+
+// let calc = new calculator(2, 2);
+
+// console.log(calc.add());
+// console.log(calc.subtract());
+// console.log(calc.multiply());
+// console.log(calc.divide());
+// //Done
+
+
+// //code challenge 3
+// let favBooks = {
+//         othello: "williams",
+//         osapa: "daveRolex",
+//         otopks: "fortballz"
+// }
+
+
+function favBooks( book, author ) {
+        this.book = book;
+        this.author = author;
+
+        this.listBookTitles = function () {
+        for (let i = 0; i < 3; i++) {
+                console.log(favBooks);
         }
 }
-
-let calc = new calculator(2, 2);
-
-console.log(calc.add());
-console.log(calc.subtract());
-console.log(calc.multiply());
-console.log(calc.divide());
-//Done
-
+}
+let outello = new favBooks("othello", "williams");
+let osapa = new favBooks("othello", "williams");
+let out = new favBooks("othello", "williams");
+console.log(out.book);
