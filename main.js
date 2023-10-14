@@ -136,25 +136,12 @@
 // //Done
 
 
-// //code challenge 3
-// let favBooks = {
-//         othello: "williams",
-//         osapa: "daveRolex",
-//         otopks: "fortballz"
-// }
-
-
-function favBooks( book, author ) {
-        this.book = book;
-        this.author = author;
-
-        this.listBookTitles = function () {
-        for (let i = 0; i < 3; i++) {
-                console.log(favBooks);
-        }
+//code challenge 3
+let favBooks = {
+         othello: "williams",
+         osapa: "daveRolex",
+         otopks: "fortballz"
 }
+function title() = {
+        // contd.
 }
-let outello = new favBooks("othello", "williams");
-let osapa = new favBooks("othello", "williams");
-let out = new favBooks("othello", "williams");
-console.log(out.book);
