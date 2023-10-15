@@ -138,10 +138,13 @@
 
 //code challenge 3
 let favBooks = {
-         othello: "williams",
-         osapa: "daveRolex",
-         otopks: "fortballz"
+        othello: "williams",
+        osapa: "daveRolex",
+        otopks: "fortballz"
 }
-function title() = {
-        // contd.
+function title() {
+        return Object.keys(favBooks);
 }
+
+let result = title();
+console.log(result);
