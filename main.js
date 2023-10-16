@@ -171,18 +171,42 @@
 // console.log(Oluwatofunmi);
 
 
-//code challenge 5
-let student1 = {
-    name: "Oluwatofunmi",
-    age: 18,
-    grade: 90
+// //code challenge 5
+// let student1 = {
+//     name: "Oluwatofunmi",
+//     age: 18,
+//     grade: 90
+// }
+// let student2 = {
+//     name: "David",
+//     age: 19,
+//     grade: 95
+// }
+// function compare () {
+//     student1.age > student2.age ?  console.log(student1.name) : console.log(student2.name);
+// }
+// compare();
+
+
+//code challenge 6
+function shoppingCart(items) {
+    this.items = items;
+
+    this.addItems = function(newItems) {
+        if (Array.isArray(newItems)) {
+            this.items = this.items.concat(newItems);
+        } else if (typeof newItems === 'string') {
+            this.items.push(newItems);
+        } else {
+            console.error("Please provide either a single item (string) or an array of items.");
+        }
+    }
 }
-let student2 = {
-    name: "David",
-    age: 19,
-    grade: 95
-}
-function compare () {
-    student1.age > student2.age ?  console.log(student1.name) : console.log(student2.name);
-}
-compare();
+let cart = new shoppingCart(["Bread", "Rice", "Soda", "Lipton"]);
+console.log(cart.items);
+
+cart.addItems("Mayonnaise");
+console.log(cart.items); 
+
+cart.addItems(["Cereal", "Milk"]);
+console.log(cart.items);
