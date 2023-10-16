@@ -188,25 +188,42 @@
 // compare();
 
 
-//code challenge 6
-function shoppingCart(items) {
-    this.items = items;
+// //code challenge 6
+// function shoppingCart(items) {
+//     this.items = items;
 
-    this.addItems = function(newItems) {
-        if (Array.isArray(newItems)) {
-            this.items = this.items.concat(newItems);
-        } else if (typeof newItems === 'string') {
-            this.items.push(newItems);
-        } else {
-            console.error("Please provide either a single item (string) or an array of items.");
-        }
-    }
+//     this.addItems = function(newItems) {
+//         if (Array.isArray(newItems)) {
+//             this.items = this.items.concat(newItems);
+//         } else if (typeof newItems === 'string') {
+//             this.items.push(newItems);
+//         } else {
+//             console.error("Please provide either a single item (string) or an array of items.");
+//         }
+//     }
+// }
+// let cart = new shoppingCart(["Bread", "Rice", "Soda", "Lipton"]);
+// console.log(cart.items);
+
+// cart.addItems("Mayonnaise");
+// console.log(cart.items); 
+
+// cart.addItems(["Cereal", "Milk"]);
+// console.log(cart.items);
+
+
+//code challenge 7
+let tofunmi = {
+    name: "Oluwatofunmi",
+    surname: "Bolaji",
+    age: 18,
+    course: "Mass communication",
+    job: "Full-stack developer"
 }
-let cart = new shoppingCart(["Bread", "Rice", "Soda", "Lipton"]);
-console.log(cart.items);
 
-cart.addItems("Mayonnaise");
-console.log(cart.items); 
+function deleteProperty (object, property) {
+    object.hasOwnProperty(property) ? console.log(`Deleted property: ${property}`) : console.log(`Property ${property} not found`)
+}
+deleteProperty(tofunmi, "course")
+console.log(tofunmi);
 
-cart.addItems(["Cereal", "Milk"]);
-console.log(cart.items);
