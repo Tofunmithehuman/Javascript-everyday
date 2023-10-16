@@ -136,15 +136,36 @@
 // //Done
 
 
-//code challenge 3
-let favBooks = {
-        othello: "williams",
-        osapa: "daveRolex",
-        otopks: "fortballz"
-}
-function title() {
-        return Object.keys(favBooks);
+// //code challenge 3
+// let favBooks = {
+//         othello: "williams",
+//         osapa: "daveRolex",
+//         otopks: "fortballz"
+// }
+// function title() {
+//         return Object.keys(favBooks);
+// }
+
+// let result = title();
+// console.log(result);
+
+
+//code challenge 4
+function bankAccount (balance, ownerName) {
+    this.balance = balance;
+    this.ownerName = ownerName;
+
+    this.deposit = function(amount) {
+        return this.balance += amount;
+    }
+    this.withdraw = function(amount) {
+        return this.balance -= amount
+    }
 }
 
-let result = title();
-console.log(result);
+let Oluwatofunmi = new bankAccount(1000, "Oluwatofunmi");
+console.log(Oluwatofunmi);
+Oluwatofunmi.deposit(20)
+console.log(Oluwatofunmi);
+Oluwatofunmi.withdraw(10)
+console.log(Oluwatofunmi);
