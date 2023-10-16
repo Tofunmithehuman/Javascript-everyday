@@ -150,22 +150,39 @@
 // console.log(result);
 
 
-//code challenge 4
-function bankAccount (balance, ownerName) {
-    this.balance = balance;
-    this.ownerName = ownerName;
+// //code challenge 4
+// function bankAccount (balance, ownerName) {
+//     this.balance = balance;
+//     this.ownerName = ownerName;
 
-    this.deposit = function(amount) {
-        return this.balance += amount;
-    }
-    this.withdraw = function(amount) {
-        return this.balance -= amount
-    }
+//     this.deposit = function(amount) {
+//         return this.balance += amount;
+//     }
+//     this.withdraw = function(amount) {
+//         return this.balance -= amount
+//     }
+// }
+
+// let Oluwatofunmi = new bankAccount(1000, "Oluwatofunmi");
+// console.log(Oluwatofunmi);
+// Oluwatofunmi.deposit(20)
+// console.log(Oluwatofunmi);
+// Oluwatofunmi.withdraw(10)
+// console.log(Oluwatofunmi);
+
+
+//code challenge 5
+let student1 = {
+    name: "Oluwatofunmi",
+    age: 18,
+    grade: 90
 }
-
-let Oluwatofunmi = new bankAccount(1000, "Oluwatofunmi");
-console.log(Oluwatofunmi);
-Oluwatofunmi.deposit(20)
-console.log(Oluwatofunmi);
-Oluwatofunmi.withdraw(10)
-console.log(Oluwatofunmi);
+let student2 = {
+    name: "David",
+    age: 19,
+    grade: 95
+}
+function compare () {
+    student1.age > student2.age ?  console.log(student1.name) : console.log(student2.name);
+}
+compare();
