@@ -212,18 +212,30 @@
 // console.log(cart.items);
 
 
-//code challenge 7
-let tofunmi = {
-    name: "Oluwatofunmi",
-    surname: "Bolaji",
-    age: 18,
-    course: "Mass communication",
-    job: "Full-stack developer"
+// //code challenge 7
+// let tofunmi = {
+//     name: "Oluwatofunmi",
+//     surname: "Bolaji",
+//     age: 18,
+//     course: "Mass communication",
+//     job: "Full-stack developer"
+// }
+
+// function deleteProperty (object, property) {
+//     object.hasOwnProperty(property) ? console.log(`Deleted property: ${property}`) : console.log(`Property ${property} not found`)
+// }
+// deleteProperty(tofunmi, "course")
+// console.log(tofunmi);
+
+
+//code challenge 8
+let vehicle = {
+        color: "Blue",
+        type: "Jeep",
+        car: {
+            brand: "Toyota"
+        }
 }
 
-function deleteProperty (object, property) {
-    object.hasOwnProperty(property) ? console.log(`Deleted property: ${property}`) : console.log(`Property ${property} not found`)
-}
-deleteProperty(tofunmi, "course")
-console.log(tofunmi);
 
+console.log(vehicle)
