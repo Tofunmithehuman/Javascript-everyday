@@ -228,14 +228,39 @@
 // console.log(tofunmi);
 
 
-//code challenge 8
-let vehicle = {
-        color: "Blue",
-        type: "Jeep",
-        car: {
-            brand: "Toyota"
-        }
-}
+// //code challenge 8
+// let vehicle = {
+//         color: "Blue",
+//         type: "Jeep",
+//         car: {
+//             brand: "Toyota"
+//         }
+// }
+
+// console.log(vehicle)
 
 
-console.log(vehicle)
+
+//code challenge 9
+let products = [
+    {
+        name: "Cocacola",
+        price: 10
+    },
+    {
+        name: "Pepsi",
+        price: 12
+    },
+    {
+        name: "Fanta",
+        price: 30
+    },
+    {
+        name: "Sprite",
+        price: 5
+    }
+]
+
+
+products.sort((a, b) => (a.price) - (b.price));
+
