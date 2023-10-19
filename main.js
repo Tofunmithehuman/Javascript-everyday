@@ -242,25 +242,25 @@
 
 
 //code challenge 9
-let products = [
-    {
-        name: "Cocacola",
-        price: 10
-    },
-    {
-        name: "Pepsi",
-        price: 12
-    },
-    {
-        name: "Fanta",
-        price: 30
-    },
-    {
-        name: "Sprite",
-        price: 5
-    }
-]
+//let products = [
+//    {
+//        name: "Cocacola",
+//        price: 10
+//    },
+//    {
+//        name: "Pepsi",
+//        price: 12
+//    },
+//    {
+//        name: "Fanta",
+//        price: 30
+//    },
+//    {
+//        name: "Sprite",
+//        price: 5
+//    }
+//]
 
 
-products.sort((a, b) => (a.price) - (b.price));
+//products.sort((a, b) => (a.price) - (b.price));
 
